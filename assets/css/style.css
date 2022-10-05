@@ -36,6 +36,11 @@ body{
   cursor: pointer;
 }
 
+.fake-dim{
+  height: 500px;
+  width: 500px;
+  background-color: blueviolet;
+}
 
 /* * Header */
 header,
@@ -75,7 +80,6 @@ nav .search-section .form-control{
 
 
 /* * Main */
-
 main{
   height: calc(100vh - var(--header-height));
 }
@@ -103,17 +107,37 @@ main{
 /* * Main content */
 
 /* * Top main */
-.top-main{
-/*   height: 120px;
- */}
-
 .my-bagde{
   border-radius: 30px;
   background-color: rgba(0,0,0, .2);
   font-size: .9rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
+/* * Table */
+table thead tr th{
+  font-size: .9rem;
+}
+
+/* ! Risolvere in altro modo */
+table thead tr th:first-child,
+table tbody tr th{
+  width: 60%;
+}
+
+table img{
+  height: 30px;
+}
+
+table span,
+table i{
+  font-size: .8rem;
+}
+
+table .btn {
+  padding: 3px 8px;
+}
 
 @media (max-width: 768px){
   .navbar-nav .nav-item:not(:last-child){
@@ -130,6 +154,12 @@ main{
     font-size: 1.2rem;
   }
 
+  table>*>tr>th:nth-child(2),
+  table>*>tr>td:nth-child(2),
+  table>*>tr>th:nth-child(3),
+  table>*>tr>td:nth-child(3){
+    display: none;
+  }
 }
 
 @media (max-width: 1110px){
