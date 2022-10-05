@@ -104,8 +104,8 @@ main{
 
 /* * Top main */
 .top-main{
-  height: 120px;
-}
+/*   height: 120px;
+ */}
 
 .my-bagde{
   border-radius: 30px;
@@ -133,12 +133,12 @@ main{
 }
 
 @media (max-width: 1110px){
-  .top-main .row .col:first-child>span:nth-child(1n + 3){
+  .top-main .row .col:first-child .badges>span:nth-child(1n + 2){
     display: none;
   }
 
-  .top-main .row .col:first-child>:nth-child(2)::before,
-  .top-main .row .col:first-child>:nth-child(2)::after{
+  .top-main .row .col:first-child .badges>:nth-child(1)::before,
+  .top-main .row .col:first-child .badges>:nth-child(1)::after{
     display: block;
     content: '\f101';
     font-family: "Font Awesome 6 Free";
@@ -149,7 +149,7 @@ main{
     padding: 0 5px;
   }
 
-  .top-main .row .col:first-child>:nth-child(2)::after{
+  .top-main .row .col:first-child .badges>:nth-child(1)::after{
     content: '\2b';
     bottom: -5%;
     margin: 0 25px;
