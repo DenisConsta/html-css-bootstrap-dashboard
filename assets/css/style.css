@@ -7,6 +7,7 @@
 :root{
   --header-height: 70px;
   --aside-width: 150px;
+
 }
 
 *{
@@ -27,7 +28,7 @@ body{
 } */
 
 
-aside{
+.aside{
   font-family: 'Poppins', sans-serif;
 }
 
@@ -35,6 +36,14 @@ aside{
 .debug{
   border: 1px solid firebrick;
   background-color: bisque;
+}
+
+.resp-font{
+  font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
+}
+
+.pointer{
+  cursor: pointer;
 }
 
 
@@ -87,8 +96,31 @@ main{
   bottom: 0;
 }
 
+.aside ul li span,
+.account span{
+  font-size: .85rem;
+}
+
+.aside ul li i,
+.account i{
+  vertical-align: middle;
+}
+
+
 @media (max-width: 768px){
   .navbar-nav .nav-item:not(:last-child){
     display: none;
   }
+
+  .aside ul li span,
+  .account span{
+    display: none;
+  }
+
+  .aside ul li i,
+  .account i{
+    font-size: 1.2rem;
+  }
+
 }
+
