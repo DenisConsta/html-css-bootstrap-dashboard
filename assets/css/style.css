@@ -2,8 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-
 /* * General */
+
+:root{
+  --header-height: 70px;
+  --aside-width: 150px;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -13,9 +18,17 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+/* 
+main::before{
+  display: block;
+  content: '';
+  height: 70px;
+}
+ */
 
 aside{
   font-family: 'Poppins', sans-serif;
+
 }
 
 /* * utilities */
@@ -26,7 +39,21 @@ aside{
 
 
 /* * Header */
-
-/* * Aside */
+header{
+  height: var(--header-height);
+}
 
 /* * Main */
+
+main{
+  height: calc(100vh - var(--header-height));
+}
+
+/* * Aside */
+.aside{
+  background-image: url('../img/sidebar-bg.png');
+  position: fixed;
+  height: calc(100vh - var(--header-height));
+  left: 0;
+  bottom: 0;
+}
