@@ -40,7 +40,7 @@
         <div class="container-fluid ms-4 ">
           <div class="input-group search-section flex-nowrap ">
             <span class="input-group-text" id="basic-addon1">
-              <i class="bi bi-search"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </span>
             <input type="text" class="form-control" placeholder="Prova a cercare ' Quanti ragazzi di classe 75 mangiano la pizza ? ' " aria-label="Username">
           </div>
@@ -86,22 +86,24 @@
     <div class="container-fluid h-100">
       <div class="row h-100 ">
 
-        <!-- ! RISOLVERE ELASTICITA' -->
         <!-- ? Aside -->
         <div class="aside col-1 px-0 ">
           <div class="container px-0 py-2 text-center resp-font h-100 d-flex flex-column justify-content-between ">
             <ul class="navbar-nav gap-3 text-light">
 
+              <!-- ? Home -->
               <li class="pointer">
                 <i class="fa-solid fa-house "></i>
                 <span>Home</span>
               </li>
 
+              <!-- ? Stats -->
               <li class="pointer">
                 <i class="fa-solid fa-chart-simple"></i>
                 <span>Stats</span>
               </li>
 
+              <!-- ? Signal -->
               <li class="text-nowrap pointer" >
                 <i class="fa-solid fa-signal"></i>
                 <span>Signals</span> 
@@ -109,6 +111,7 @@
 
             </ul>
 
+            <!-- ? Admin -->
             <div class="account text-light pointer">
               <i class="fa-solid fa-gear"></i>
               <span>Admin</span> 
@@ -118,7 +121,31 @@
         </div>
 
         <!-- ? Main content -->
-        <div class="main-content col-11 offset-1">
+        <div class="main-content col-11 offset-1 px-0">
+          <div class="container-fluid h-100 px-0">
+
+            <!-- ? Top main -->
+            <div class="top-main bg-primary p-4 text-light">
+
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="col ">
+                  <!-- ? Title + badge -->
+                  <div class="top-main-title">
+                    <h2 class="fw-normal d-inline-flex" >Boolean</h2>
+                    <span class="badge badge-pill my-bagde">Piano blaze</span>
+                  </div>
+                  <!-- ? Badges -->
+                  <span class="badge badge-pill my-bagde position-relative">3 app</span>
+                  <span class="badge badge-pill my-bagde">Boolean mobile app</span>
+                  <span class="badge badge-pill my-bagde">Boolean web app</span>
+                  <span class="badge badge-pill my-bagde">Boolean blog app</span>
+                  
+                </div>
+                <div class="col debug"></div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
       </div>

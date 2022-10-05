@@ -6,8 +6,6 @@
 
 :root{
   --header-height: 70px;
-  --aside-width: 150px;
-
 }
 
 *{
@@ -19,14 +17,6 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
-
-/* ! doubt */
-/* .main-content::before{
-  display: block;
-  content: '';
-  height: 70px;
-} */
-
 
 .aside{
   font-family: 'Poppins', sans-serif;
@@ -63,12 +53,16 @@ nav .logo img:last-child{
   height: var(--header-height);
 }
 
-
 /* * Search bar */
 nav .search-section .form-control,
 nav .search-section .input-group-text{
   background-color: #E5E5E5 ;
   border: none;
+  font-size: .9rem;
+}
+
+nav .search-section .form-control{
+  padding-left: 0;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -98,12 +92,26 @@ main{
 
 .aside ul li span,
 .account span{
-  font-size: .85rem;
+  font-size: .8rem;
 }
 
 .aside ul li i,
 .account i{
   vertical-align: middle;
+}
+
+/* * Main content */
+
+/* * Top main */
+.top-main{
+  height: 120px;
+}
+
+.my-bagde{
+  border-radius: 30px;
+  background-color: rgba(0,0,0, .2);
+  font-size: .9rem;
+  font-weight: 500;
 }
 
 
@@ -124,3 +132,29 @@ main{
 
 }
 
+@media (max-width: 1110px){
+  .top-main .row .col:first-child>span:nth-child(1n + 3){
+    display: none;
+  }
+
+  .top-main .row .col:first-child>:nth-child(2)::before,
+  .top-main .row .col:first-child>:nth-child(2)::after{
+    display: block;
+    content: '\f101';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 100%;
+    bottom: 15%;
+    padding: 0 5px;
+  }
+
+  .top-main .row .col:first-child>:nth-child(2)::after{
+    content: '\2b';
+    bottom: -5%;
+    margin: 0 25px;
+    padding: 5px;
+    border-radius: 50%; 
+    background-color: rgba(0,0,0, .2);
+  }
+}
