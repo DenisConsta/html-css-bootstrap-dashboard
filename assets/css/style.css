@@ -128,6 +128,7 @@ table tbody tr th{
 
 table img{
   height: 30px;
+  padding-right: 10px;
 }
 
 table span,
@@ -139,6 +140,21 @@ table .btn {
   padding: 3px 8px;
 }
 
+/* *Todo list  */
+.todo .list-group-item input{
+  margin-right: 5px;
+}
+
+.todo .list-group-item label{
+  font-size: .85rem;
+}
+
+/* * Offcanvas */
+.offcanvas-end{
+  width: 70%;
+}
+
+/* Tablet */
 @media (max-width: 768px){
   .navbar-nav .nav-item:not(:last-child){
     display: none;

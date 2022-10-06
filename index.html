@@ -52,9 +52,19 @@
           <ul class="navbar-nav gap-3">
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="fa-solid fa-list"></i>
-              </a>
+
+              <div class="dropdown">
+                <a href="#" class="nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-list"></i>
+                </a>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Lorem, ipsum.</a></li>
+                  <li><a class="dropdown-item" href="#">Lorem, ipsum.</a></li>
+                  <li><a class="dropdown-item" href="#">Lorem, ipsum.</a></li>
+                </ul>
+              </div>
+  
             </li>
 
             <li class="nav-item">
@@ -64,9 +74,9 @@
             </li>
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="bi bi-three-dots-vertical"></i>
-              </a>
+                <a href="#" class="nav-link" data-bs-toggle="Centered dropdown" aria-expanded="false">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </a>
             </li>
 
             <li class="nav-item">
@@ -171,7 +181,7 @@
                   <div class="row row-cols-1 row-cols-lg-2">
                     
                     <!-- ? Left -->
-                    <div class="col col-lg-8 ">
+                    <div class="col col-lg-8 mb-3">
                       <!-- ? Next classes -->
                       <div class="next-classes mb-3">
                         <!-- ? Card -->
@@ -179,7 +189,7 @@
                           <!-- ? Card header -->
                           <div class="card-header d-flex justify-content-between">
                             <h3 class="fw-normal d-inline-block" >Prossime classi</h3>
-                            <button type="button" class="btn btn-outline-primary">
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="offcanvas" href="#myoffcanvas" role="button" aria-controls="myoffcanvas">
                               <i class="fa-sharp fa-solid fa-plus"></i>
                             </button>
                           </div>
@@ -221,7 +231,7 @@
                                 <tr>
                                   <th scope="row">
                                     <img src="assets/img/class-avatar.jpg" alt="">
-                                    <span class="fw-normal" >Classe 75</span>
+                                    <span class="fw-normal" >Classe 76</span>
                                   </th>
                                   <td><span>15 Feb 2021</span></td>
                                   <td><span>20%</span></td>
@@ -240,7 +250,26 @@
                                 <tr>
                                   <th scope="row">
                                     <img src="assets/img/class-avatar.jpg" alt="">
-                                    <span class="fw-normal" >Classe 75</span>
+                                    <span class="fw-normal" >Classe 77</span>
+                                  </th>
+                                  <td><span>15 Feb 2021</span></td>
+                                  <td><span>20%</span></td>
+                                  <td><div class="badge bg-warning">process</div></td>
+                                  <td>
+                                    <a type="button" class="btn btn-outline-secondary">
+                                      <i class="fa-sharp fa-solid fa-pencil"></i>
+                                    </a>
+                                  
+                                    <a type="button" class="btn btn-outline-secondary">
+                                      <i class="fa-sharp fa-solid fa-trash"></i>
+                                    </a>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <th scope="row">
+                                    <img src="assets/img/class-avatar.jpg" alt="">
+                                    <span class="fw-normal" >Classe 78</span>
                                   </th>
                                   <td><span>15 Feb 2021</span></td>
                                   <td><span>20%</span></td>
@@ -259,7 +288,26 @@
                                 <tr>
                                   <th scope="row">
                                     <img src="assets/img/class-avatar.jpg" alt="">
-                                    <span class="fw-normal" >Classe 75</span>
+                                    <span class="fw-normal" >Classe 79</span>
+                                  </th>
+                                  <td><span>15 Feb 2021</span></td>
+                                  <td><span>20%</span></td>
+                                  <td><div class="badge bg-danger">failed</div></td>
+                                  <td>
+                                    <a type="button" class="btn btn-outline-secondary">
+                                      <i class="fa-sharp fa-solid fa-pencil"></i>
+                                    </a>
+                                  
+                                    <a type="button" class="btn btn-outline-secondary">
+                                      <i class="fa-sharp fa-solid fa-trash"></i>
+                                    </a>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <th scope="row">
+                                    <img src="assets/img/class-avatar.jpg" alt="">
+                                    <span class="fw-normal" >Classe 80</span>
                                   </th>
                                   <td><span>15 Feb 2021</span></td>
                                   <td><span>20%</span></td>
@@ -278,11 +326,11 @@
                                 <tr>
                                   <th scope="row">
                                     <img src="assets/img/class-avatar.jpg" alt="">
-                                    <span class="fw-normal" >Classe 75</span>
+                                    <span class="fw-normal" >Classe 81</span>
                                   </th>
                                   <td><span>15 Feb 2021</span></td>
                                   <td><span>20%</span></td>
-                                  <td><div class="badge bg-success">Done</div></td>
+                                  <td><div class="badge bg-danger">failed</div></td>
                                   <td>
                                     <a type="button" class="btn btn-outline-secondary">
                                       <i class="fa-sharp fa-solid fa-pencil"></i>
@@ -297,45 +345,7 @@
                                 <tr>
                                   <th scope="row">
                                     <img src="assets/img/class-avatar.jpg" alt="">
-                                    <span class="fw-normal" >Classe 75</span>
-                                  </th>
-                                  <td><span>15 Feb 2021</span></td>
-                                  <td><span>20%</span></td>
-                                  <td><div class="badge bg-success">Done</div></td>
-                                  <td>
-                                    <a type="button" class="btn btn-outline-secondary">
-                                      <i class="fa-sharp fa-solid fa-pencil"></i>
-                                    </a>
-                                  
-                                    <a type="button" class="btn btn-outline-secondary">
-                                      <i class="fa-sharp fa-solid fa-trash"></i>
-                                    </a>
-                                  </td>
-                                </tr>
-
-                                <tr>
-                                  <th scope="row">
-                                    <img src="assets/img/class-avatar.jpg" alt="">
-                                    <span class="fw-normal" >Classe 75</span>
-                                  </th>
-                                  <td><span>15 Feb 2021</span></td>
-                                  <td><span>20%</span></td>
-                                  <td><div class="badge bg-success">Done</div></td>
-                                  <td>
-                                    <a type="button" class="btn btn-outline-secondary">
-                                      <i class="fa-sharp fa-solid fa-pencil"></i>
-                                    </a>
-                                  
-                                    <a type="button" class="btn btn-outline-secondary">
-                                      <i class="fa-sharp fa-solid fa-trash"></i>
-                                    </a>
-                                  </td>
-                                </tr>
-
-                                <tr>
-                                  <th scope="row">
-                                    <img src="assets/img/class-avatar.jpg" alt="">
-                                    <span class="fw-normal" >Classe 75</span>
+                                    <span class="fw-normal" >Classe 82</span>
                                   </th>
                                   <td><span>15 Feb 2021</span></td>
                                   <td><span>20%</span></td>
@@ -408,7 +418,7 @@
                               </h2>
                               <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
                                 <div class="accordion-body">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor earum eaque minus incidunt nihil! Eligendi autem, facilis mollitia, ratione fugit quaerat deleniti soluta consequuntur, sequi temporibus adipisci vero necessitatibus?
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor earum eaque minus incidunt nihil! Eligendi autem, facilis mollitia, ratione alice quaerat deleniti soluta consequuntur, sequi temporibus adipisci vero necessitatibus?
                                 </div>
                               </div>
                             </div>
@@ -421,19 +431,162 @@
                       
                     </div>
 
+                    
+
+                    </div>
+                
                     <!-- ? Right -->
                     <div class="col col-lg-4 ">
 
+                      <!-- ? To do list -->
+                      <div class="card todo mb-3">
+                        <div class="card-header">
+                          <h3>Todo</h3>
+                        </div>
+                        <div class="card-body">
+                          <ul class="list-group">
+
+                            <!-- ? First checkbox -->
+                            <li class="list-group-item">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Avvisare gli alunni
+                              </label>  
+                            </li>
+                            
+                            <!-- ? Second checkbox -->
+                            <li class="list-group-item">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Lezione su Bootstrap 5
+                              </label>  
+                            </li>
+
+                            <!-- ? Third checkbox -->
+                            <li class="list-group-item">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Conquistare il mondo con Laravel
+                              </label>  
+                            </li>
+                            
+                            
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <img class="card-img-top" src="assets/img/chart.jpg" alt="chart">
+                        <div class="card-body">
+                          <h5 class="card-title">Utenti attivi</h5>
+                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Gennaio: 1200</li>
+                          <li class="list-group-item">Febbraio: 800</li>
+                          <li class="list-group-item">Marzo: 1500</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Visualizza report approfondito</a>
+                        </div>
+                      </div>
+                      
+                      <!-- ? Offcanvas -->
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="myoffcanvas" aria-labelledby="offcanvasLabel">
+
+                        <!-- ? Offcanvas header -->
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasLabel">Form</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <!-- ? Offcanvas body -->
+                        <div class="offcanvas-body">
+                          
+                          <form>
+                            <div class="form-row row">
+
+                              <div class="form-group col-6 mb-2">
+                                <label for="inputEmail4">Email</label>
+                                <div class="input-group ">
+
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                  </div>
+
+                                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                              </div>
+
+
+                              <div class="form-group col-6 mb-2">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                              </div>
+                            
+                              <div class="form-group col-12 mb-2">
+                                <label for="inputAddress">Indirizzo</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                              </div>
+                            
+                              <div class="form-group col-6 mb-2">
+                                <label for="inputAddress2">Città</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                              </div>
+
+                              <div class="form-row col-4 mb-2">
+                                <div class="form-group ">
+                                  <label for="inputCity">Stato</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                              </div>
+
+                              <div class="form-group col-2 mb-2">
+                                <label for="inputState">CAP</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+
+                              <div class="form-group col-12 mb-2">
+                                <label for="inputEmail4">Foto</label>
+                                <div class="input-group ">
+
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">Scegli il file</div>
+                                  </div>
+
+                                  <input type="email" class="form-control" id="inputEmail4" placeholder="Nessun file selezionato">
+                                </div>
+                              </div>
+
+                          </div>
+
+                          <div class="form-group mb-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Seleziona per proseguire
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Salva</button>
+                          <button type="submit" class="btn btn-warning">Svouta</button>
+
+                          </form>
+                          
+                        </div>
+
+                      </div>
+                      
                     </div>
 
                   </div>
                 </div>
-                
               </div>
             </div>
-          </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </main>
